@@ -152,5 +152,5 @@ output "bucket_name" {
 
 output "aws_region" {
   description = "Região da AWS onde os recursos foram criados."
-  value       = provider.aws.region
+  value       = var.aws_region
 }

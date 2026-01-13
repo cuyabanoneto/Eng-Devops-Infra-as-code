@@ -1,4 +1,4 @@
-_# ==============================================================================
+# ==============================================================================
 # ARQUIVO DE DECLARAÇÃO DE VARIÁVEIS
 # Disciplina: Gerenciamento de Mudanças, Configuração e Infraestrutura
 # Unidade 2: Infrastructure as Code com Terraform
@@ -14,7 +14,7 @@ _# =============================================================================
 variable "aws_region" {
   description = "Região da AWS para a criação dos recursos."
   type        = string
-  default     = "us-east-1"
+  default     = "sa-east-1"
 
   validation {
     condition     = can(regex("^[a-z]{2}-[a-z]+-[0-9]$", var.aws_region))
