@@ -40,7 +40,7 @@ provider "aws" {
       Projeto       = var.projeto
       Gerenciamento = var.gerenciamento
       Ambiente      = var.ambiente
-      CriadoPor     = "Terraform"
+      CriadoPor     = "Coloque Aqui Seu Nome"
     }
   }
 }

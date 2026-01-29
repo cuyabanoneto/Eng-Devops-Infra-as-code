@@ -41,14 +41,14 @@ resource "aws_security_group" "site_nginx_sg" {
     description = "HTTP access"
   }
 
-  # # Regra de entrada: HTTPS (porta 443) - COMENTADA
-  # ingress {
-  #   from_port   = 443
-  #   to_port     = 443
-  #   protocol    = "tcp"
-  #   cidr_blocks = ["0.0.0.0/0"]
-  #   description = "HTTPS access"
-  # }
+  # Regra de entrada: HTTPS (porta 443) - COMENTADA
+  ingress {
+    from_port   = 443
+    to_port     = 443
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+    description = "HTTPS access"
+  }
 
   # Regra de saída: Permitir todo o tráfego de saída
   egress {
@@ -71,8 +71,8 @@ resource "aws_security_group" "site_nginx_sg" {
 # A instância será acessível via SSH e HTTP.
 #
 # Recursos:
-# - AMI: Ubuntu 22.04 LTS (us-east-1)
-# - Tipo: t2.micro (elegível para free tier)
+# - AMI: Ubuntu 24.04 LTS (sa-east-1)
+# - Tipo: t3.micro (elegível para free tier)
 # - Chave: ifmt-devops-iac.pem
 # ============================================================================
 

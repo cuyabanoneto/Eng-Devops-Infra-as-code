@@ -104,7 +104,7 @@
     dest: "{{ web_root }}/"
     archive: yes
     delete: no
-    private_key: "../../ifmt-devops-iac.pem"
+    private_key: "../../ColoqueAquiSeuArquivo.pem"
   delegate_to: localhost
   become: no
   tags:

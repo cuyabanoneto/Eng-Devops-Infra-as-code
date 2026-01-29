@@ -57,7 +57,7 @@ variable "instance_type" {
 }
 
 variable "ami_ubuntu" {
-  description = "AMI do Ubuntu 22.04 LTS (us-east-1)"
+  description = "AMI do Ubuntu 24.04 LTS (sa-east-1)"
   type        = string
   # default     = "ami-0a14809f48c07e3b7"
 }
@@ -65,7 +65,7 @@ variable "ami_ubuntu" {
 variable "key_name" {
   description = "Nome da chave PEM para acesso SSH"
   type        = string
-  # default     = "ifmt-devops-iac"
+  # default     = "ColoqueAquiSuakeypair"
 }
 
 # ============================================================================

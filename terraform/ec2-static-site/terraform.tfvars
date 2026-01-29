@@ -23,7 +23,7 @@ recurso       = "site-nginx"
 # Configuração da Instância EC2
 instance_type = "t3.micro"
 ami_ubuntu    = "ami-0a14809f48c07e3b7"
-key_name      = "ifmt-devops-iac"
+key_name      = "ColoqueAquiSuakeypair"
 
 # Configuração de Rede
 enable_public_ip = true
@@ -33,5 +33,6 @@ https_port       = 443
 
 # Tags Adicionais
 tags_adicionais = {
-  Recurso = "site-nginx"
+  Recurso = "site-nginx",
+  Gerenciamento = "terraform-iac"
 }
