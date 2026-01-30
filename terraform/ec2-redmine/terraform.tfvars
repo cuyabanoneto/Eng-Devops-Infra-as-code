@@ -21,9 +21,9 @@ ambiente      = "desenvolvimento"
 recurso       = "redmine-nginx"
 
 # Configuração da Instância EC2
-instance_type = "t3.small" # Alterado para t3.small para melhor desempenho
+instance_type = "t3.micro" # Alterado para t3.small para melhor desempenho
 ami_ubuntu    = "ami-04d88e4b4e0a5db46" # AMI do Ubuntu 24.04 LTS (sa-east-1)
-key_name      = "ifmt-devops-iac" # Chave SSH previamente criada na AWS
+key_name      = "SuaKeyPairAqui" # Chave SSH previamente criada na AWS
 root_volume_size = 24 # Tamanho do volume raiz em GB
 
 

@@ -3,7 +3,7 @@
 # ============================================================================
 # Este arquivo contém a definição dos recursos principais:
 # - Security Group: Controla o acesso à instância (portas 22 e 80)
-# - Instância EC2: Máquina virtual Ubuntu 22.04 LTS
+# - Instância EC2: Máquina virtual Ubuntu 24.04 LTS
 #
 # Documentação:
 # - Security Group: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group
@@ -59,11 +59,11 @@ resource "aws_security_group" "redmine_nginx_sg" {
 # ============================================================================
 # INSTÂNCIA EC2
 # ============================================================================
-# Cria uma instância EC2 com Ubuntu 22.04 LTS.
+# Cria uma instância EC2 com Ubuntu 24.04 LTS.
 # A instância será acessível via SSH e HTTP.
 #
 # Recursos:
-# - AMI: Ubuntu 22.04 LTS (sa-east-1)
+# - AMI: Ubuntu 24.04 LTS (sa-east-1)
 # - Tipo: t2.micro (elegível para free tier)
 # - Chave: ifmt-devops-iac.pem
 # ============================================================================

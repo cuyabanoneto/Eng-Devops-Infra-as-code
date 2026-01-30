@@ -83,7 +83,7 @@ output "resumo_instancia" {
     tipo          = aws_instance.redmine_nginx.instance_type
     estado        = aws_instance.redmine_nginx.instance_state
     chave_acesso  = var.key_name
-    usuario_ssh   = "admin"
+    usuario_ssh   = "ubuntu"
     comando_ssh   = "ssh -i ~/.ssh/${var.key_name}.pem ubuntu@${aws_instance.redmine_nginx.public_ip}"
   }
 }
@@ -103,7 +103,7 @@ output "proximos_passos" {
     PRÓXIMOS PASSOS:
     
     1. Atualizar DNS (Registro BR):
-       - Domínio: site.esalabifmt.com.br
+       - Domínio: SeuDominio.com.br
        - Apontar para: ${aws_instance.redmine_nginx.public_ip}
     
     2. Aguardar propagação DNS (pode levar alguns minutos)
