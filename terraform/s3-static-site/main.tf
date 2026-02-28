@@ -29,7 +29,7 @@ resource "aws_s3_bucket" "site_bucket" {
     Name        = "Bucket para o site estático da Unidade 2"
     Project     = "Especializacao DevOps IFMT"
     ManagedBy   = "Terraform"
-    Professor   = "Waldinei Bispo de Lima"
+    Aluno = "Manoel Felippe F. Cuyabano Neto"
   }
 }
 
