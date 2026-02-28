@@ -23,13 +23,14 @@ provider "aws" {
 # metadados importantes para organização, rastreamento de custos e identificação.
 # ------------------------------------------------------------------------------
 resource "aws_s3_bucket" "site_bucket" {
-  bucket = var.bucket_name
+  #bucket = var.bucket_name
+  bucket = "devops-ifmt-iac-site-estatico-2026-aluno-manoel-felippe"
 
   tags = {
     Name        = "Bucket para o site estático da Unidade 2"
     Project     = "Especializacao DevOps IFMT"
     ManagedBy   = "Terraform"
-    Aluno       = "Manoel Cuyabano Neto"
+    Aluno       = "Manoel Felippe F. Cuyabano Neto"
   }
 }
 
